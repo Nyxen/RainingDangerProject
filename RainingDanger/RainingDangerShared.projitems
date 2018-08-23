@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{0D85470E-6E13-4C43-910B-AABF999A8FE3}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>RainingDangerShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MainGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Global.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Setting.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mechanics\Character.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mechanics\Column.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mechanics\ControlTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mechanics\Direction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mechanics\FallingItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mechanics\HighScoreControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mechanics\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mechanics\ItemType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\ControlSelectScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\GameOverScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\GameScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\OptionScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\StatScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\TitleScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Content\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Mechanics\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Properties\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Screens\" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+  </ItemGroup>
+</Project>
